@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* -----------------------
+    Header Section Start
+  ------------------------- */
+
+header {
+    width: 100%;
+    margin-top: 2em;
+    border-radius: 15px;
+    background-color: #161515;
+    display: flex;
+    gap: 3em;
+}
+
+@keyframes change-color {
+    0% {
+        color: white;
+
+    }
+
+    25% {
+        color: rgb(85, 72, 72);
+
+    }
+
+    50% {
+        color: rgb(80, 54, 54);
+    }
+
+    75% {
+        color: rgb(165, 100, 100);
+    }
+
+    100% {
+        color: rgb(228, 133, 133);
+
+    }
+}
+
+.banner-text,
+.banner-image {
+    width: 50%;
+    color: white;
+}
+
+.banner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 1em 3em 4em;
+}
+
+.banner-details h1 {
+    font-size: 4em;
+    line-height: 1.1em;
+    animation: change-color 4s infinite linear;
+}
+
+.banner-details p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin: 1em 0;
+}
+
+.banner-image {
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner-image img {
+    width: 100%;
+    padding: 1em 2em 0 0;
+}
+
+.banner-details button,
+.view-all button {
+    padding: 0 0;
+    color: white;
+    border-radius: 5px;
+    background-color: red;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+}
+
+.view-all button {
+    display: none;
+}
+
+/*--------------------
+   Header Section End 
+ ----------------------*/
+
+
+/* ---------------- 
+  Main Section Start
+----------------------- */
+
+main {
+    margin-top: 4em;
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+}
+
+.left-nav {
+    width: 25%;
+    background-color: #161515;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+    padding: 1.5em;
+    border-radius: 7px;
+}
+
+.left-nav button {
+    font-size: 1.1em;
+    border-radius: 7px;
+    padding: 0.5em 0;
+    border: none;
+}
+
+.left-nav button:hover,
+.active {
+    background-color: red;
+    color: black;
+}
+
+.all-cards {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.card {
+    border: 1px solid #d3d0d0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.card-details {
+    padding: 0.5em;
+}
+
+.card-details button {
+    padding: 0.4em 1em;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.card-details h2 {
+    font-size: 0.85em;
+    margin: 1em 0;
+}
+
+.comment {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.comment span:nth-child(2) {
+    margin-left: 2em;
+}
+
+
+/* ----------------- 
+     Footer Start
+------------------ */
+
+footer {
+    background-color: #161515;
+    color: rgba(223, 107, 6, 0.967);
+    text-align: center;
+    padding: 4em;
+    margin-top: 4em;
+}
+
+footer h2 {
+    font-size: 2em;
+}
+
+footer hr {
+    margin: 2em 0;
+    border: 1px solid rgb(59, 58, 58);
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-nav p a {
+    color: rgb(18, 134, 176);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.fa-facebook-square {
+    color: rgb(16, 101, 186);
+}
+
+.fa-instagram-square {
+    color: orangered;
+}
+
+.fa-twitter-square {
+    color: rgb(5, 173, 239);
+}
+
+/*--------------------
+   Socia Style Start
+ ---------------------*/
+.social-icon a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 0.5em;
+}
+
+.social-icon a:hover {
+    color: rgb(119, 96, 96);
+}
+
+.social-icon {
+    margin-top: 1.5em;
+}
+
+/*------------------
+   Social Style End 
+ --------------------*/
+
+/*--------------
+   Footer End 
+---------------*/
+
+/* ----------------
+   Upcoming Start
+-------------------- */
+
+.upcoming-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.upcoming-card {
+    border: 1px solid rgb(206, 204, 204);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.upcoming-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3em;
+}
+
+.upcoming-image img {
+    width: 35%;
+}
+
+.upcoming-text {
+    text-align: center;
+}
+
+.upcoming-text h2 {
+    margin: 0.6em;
+}
+
+.upcoming-text p {
+    color: gray;
+}
+
+/*----------------
+    Upcoming End 
+ ------------------*/
+
+/* ---------------------------------Responsiveness------------------------------ */
+/*--------------
+  Tablet Start
+ --------------- */
+
+@media screen and (max-width: 990px) {
+
+    .container {
+        width: 100vw;
+        padding: 1.5em;
+    }
+
+    header {
+        width: 100%;
+        gap: 2em;
+    }
+
+    .banner-details h1 {
+        font-size: 5vw;
+    }
+
+    .banner-details p {
+        font-size: 2vw;
+    }
+
+    .banner-image {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .banner-image img {
+        width: 100%;
+        padding: 0;
+    }
+
+    main {
+        margin-top: 4em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: flex-start;
+    }
+
+    .left-nav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 2em;
+        background-color: white;
+        padding: 0;
+    }
+
+    .left-nav button {
+        width: 200px;
+        font-size: 1.4em;
+        border-radius: 7px;
+        padding: 0.8em 0.6em;
+        border: none;
+    }
+
+    .view-all {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    .view-all button {
+        display: block;
+    }
+
+    .all-cards {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-details h2 {
+        font-size: 2.9vw;
+    }
+
+    .footer-nav {
+        gap: 3em;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .upcoming-cards {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*---------------
+    Tablet End 
+ -----------------*/
+
+
+/*---------------------
+     Mobile Start
+ ----------------------*/
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100vw;
+        padding: 1em;
+    }
+
+    header {
+        width: 100%;
+        flex-direction: column;
+        background-color: #161515;
+    }
+
+    .banner-text,
+    .banner-image {
+        width: 100%;
+    }
+
+    .banner-details {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+    }
+
+    .banner-details h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .banner-details p {
+        font-size: 1.1em;
+        line-height: 1.2em;
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    .banner-image img {
+        width: 100%;
+        padding: 1em 1em 0 1em;
+    }
+
+    .left-nav {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-nav button {
+        padding: 1em 1em;
+    }
+
+    .left-nav button:nth-child(1) {
+        width: max-content;
+        padding: 1em 2em;
+    }
+
+    .all-cards {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .view-all {
+        display: none;
+    }
+
+}
+
+/*-------------------
+    Mobile End 
+ ---------------------*/
